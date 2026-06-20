@@ -35,8 +35,15 @@ export default function WorkDetailPage() {
 
       <header className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start mb-16">
         <div className="lg:col-span-7">
-          <div className="eyebrow">{t(cs.industry) as string} · {cs.year}</div>
-          <h1 className="mt-6 font-display text-4xl sm:text-5xl tracking-tighter leading-[0.95] font-medium text-balance">{t(cs.title) as string}</h1>
+          <div className="flex items-center gap-3 mb-4">
+            {cs.logo && (
+              <div className="h-10 w-10 rounded-full bg-white border border-border shadow-sm flex items-center justify-center p-1.5 shrink-0">
+                <img src={cs.logo} alt="" className="h-full w-full object-contain" />
+              </div>
+            )}
+            <div className="eyebrow">{t(cs.industry) as string} · {cs.year}</div>
+          </div>
+          <h1 className="font-display text-4xl sm:text-5xl tracking-tighter leading-[0.95] font-medium text-balance">{t(cs.title) as string}</h1>
         </div>
         <div className="lg:col-span-5">
           <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border bg-muted">
@@ -102,6 +109,20 @@ export default function WorkDetailPage() {
               ))}
             </div>
           </section>
+
+          {cs.evidence && cs.evidence.length > 0 && (
+            <section className="border-t border-border pt-10">
+              <div className="eyebrow mb-6">{t(UI.case.evidence) as string}</div>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {cs.evidence.map((ev, i) => (
+                  <figure key={i} className="rounded-lg overflow-hidden border border-border">
+                    <img src={ev.src} alt={t(ev.caption) as string} className="w-full object-cover" />
+                    <figcaption className="px-4 py-3 text-xs text-muted-foreground">{t(ev.caption) as string}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className="border-t border-border pt-10">
             <div className="eyebrow mb-4">{t(UI.case.takeaway) as string}</div>

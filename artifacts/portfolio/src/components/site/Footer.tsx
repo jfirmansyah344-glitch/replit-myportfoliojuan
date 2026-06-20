@@ -32,7 +32,7 @@ export default function Footer() {
                   <a
                     key={s.label}
                     href={s.href}
-                    target="_blank"
+                    target={s.icon === "mail" ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                     aria-label={s.label}
                     data-testid={`footer-social-${s.icon}`}
@@ -46,9 +46,15 @@ export default function Footer() {
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <Button asChild className="rounded-full px-6" data-testid="footer-hire-juan-btn">
-              <Link to="/contact">{t(UI.cta.hire)} <ArrowUpRight className="h-4 w-4" /></Link>
-            </Button>
+            <a
+              href={SITE.waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-hire-juan-btn"
+              className="inline-flex items-center justify-center gap-2 rounded-full px-6 h-10 text-sm font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors"
+            >
+              {t(UI.cta.hire)} <ArrowUpRight className="h-4 w-4" />
+            </a>
             <Button asChild variant="outline" className="rounded-full px-6" data-testid="footer-access-insights-btn">
               <Link to="/insights">{t(UI.cta.accessInsights)} <ArrowUpRight className="h-4 w-4" /></Link>
             </Button>

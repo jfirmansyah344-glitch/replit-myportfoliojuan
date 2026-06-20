@@ -7,8 +7,11 @@ export default function LanguageSwitcher() {
       type="button"
       onClick={() => setLang(lang === "en" ? "id" : "en")}
       data-testid="language-switcher"
-      className="inline-flex items-center justify-center h-9 px-3 rounded-md border border-border text-xs font-mono uppercase tracking-wider hover:bg-muted transition-colors"
+      className="inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-md border border-border text-xs font-mono uppercase tracking-wider hover:bg-muted transition-colors"
     >
+      <span className="text-base leading-none" aria-hidden="true">
+        {lang === "en" ? "🇮🇩" : "🇺🇸"}
+      </span>
       {lang === "en" ? "ID" : "EN"}
     </button>
   );

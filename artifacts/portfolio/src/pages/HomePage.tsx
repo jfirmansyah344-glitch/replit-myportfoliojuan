@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { useRef } from "react";
 import Marquee from "react-fast-marquee";
-import { ArrowUpRight, ArrowRight, ArrowLeft, Download } from "lucide-react";
+import { ArrowRight, ArrowLeft, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE, UI, HOME_METRICS, INDUSTRIES, CASE_STUDIES, INSIGHTS } from "@/lib/site";
 import { useT } from "@/components/site/LanguageProvider";
@@ -33,9 +33,15 @@ export default function HomePage() {
             </h1>
             <p className="mt-8 text-lg text-muted-foreground max-w-xl leading-relaxed">{t(UI.hero.paragraph) as string}</p>
             <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3">
-              <Button asChild size="lg" className="rounded-full px-7" data-testid="hero-hire-cta">
-                <Link to="/contact">{t(UI.cta.hireExec) as string} <ArrowUpRight className="h-4 w-4" /></Link>
-              </Button>
+              <a
+                href={SITE.waUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="hero-hire-cta"
+                className="inline-flex items-center justify-center gap-2 px-7 rounded-full h-12 text-base font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors whitespace-nowrap"
+              >
+                {t(UI.cta.hireExec) as string}
+              </a>
               <a
                 href={SITE.resumeUrl}
                 target="_blank"
@@ -155,11 +161,19 @@ export default function HomePage() {
                 <div className="absolute top-4 left-4 inline-flex items-center bg-background/90 backdrop-blur px-2.5 py-1 rounded-full text-[11px] font-mono tracking-wider">
                   CASE {String(idx + 1).padStart(2, "0")}
                 </div>
+                {cs.logo && (
+                  <div className="absolute top-4 right-4 bg-white rounded-full p-1.5 shadow-sm border border-border/20">
+                    <img src={cs.logo} alt="" className="h-6 w-6 object-contain" />
+                  </div>
+                )}
               </div>
               <div className="p-6">
                 <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">{t(cs.industry) as string}</div>
                 <h3 className="mt-3 font-display text-xl tracking-tight font-medium leading-snug">{t(cs.title) as string}</h3>
-                <div className="mt-4 flex items-center gap-2 text-sm font-medium">{t(UI.cta.readCase) as string} <ArrowUpRight className="h-4 w-4" /></div>
+                <div className="mt-4 flex items-center gap-2 text-sm font-medium text-emerald-600 group-hover:text-emerald-500 transition-colors">
+                  {t(UI.cta.readCase) as string}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </div>
               </div>
             </Link>
           ))}
@@ -188,7 +202,7 @@ export default function HomePage() {
                     <p className="mt-1 text-sm text-muted-foreground">{t(p.category) as string} · {t(p.readTime) as string}</p>
                   </div>
                   <div className="md:col-span-2 self-center text-right">
-                    <ArrowUpRight className="ml-auto h-5 w-5 group-hover:rotate-[12deg] transition-transform" />
+                    <ArrowRight className="ml-auto h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </li>
@@ -207,9 +221,15 @@ export default function HomePage() {
             <p className="mt-4 text-muted-foreground max-w-2xl">{t(UI.sections.ctaBand.copy) as string}</p>
           </div>
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end">
-            <Button asChild size="lg" className="rounded-full" data-testid="cta-band-hire">
-              <Link to="/contact">{t(UI.cta.startConversation) as string}</Link>
-            </Button>
+            <a
+              href={SITE.waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="cta-band-hire"
+              className="inline-flex items-center justify-center rounded-full h-12 px-6 text-base font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors"
+            >
+              {t(UI.cta.startConversation) as string}
+            </a>
             <Button asChild size="lg" variant="outline" className="rounded-full" data-testid="cta-band-store">
               <Link to="/expertise">{t(UI.cta.browseStore) as string}</Link>
             </Button>

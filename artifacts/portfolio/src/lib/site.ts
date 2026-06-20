@@ -30,10 +30,11 @@ export const SITE = {
     { label: "Instagram", href: "https://www.instagram.com/juanbuildss/", icon: "instagram" },
     { label: "Threads", href: "https://www.threads.com/@juanbuildss", icon: "threads" },
     { label: "YouTube", href: "https://youtube.com/@escalapulse?si=3nQMD4sQgYkV1ARn", icon: "youtube" },
-    { label: "Email", href: "mailto:jfirmansyah344@gmail.com", icon: "mail" },
+    { label: "Email", href: "mailto:jfirmansyah344@gmail.com?subject=Business%20Inquiry&body=Hi%20Juan,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0ARegards,", icon: "mail" },
   ],
   portrait:
     "https://customer-assets.emergentagent.com/job_revenue-leader/artifacts/6qmq52xk_Black%20shirt_Juan.png",
+  waUrl: "https://wa.link/zmt03q",
 };
 
 export const UI = {
@@ -47,7 +48,7 @@ export const UI = {
     contact: { en: "Contact", id: "Kontak" },
   },
   cta: {
-    hire: { en: "Hire Juan", id: "Rekrut Juan" },
+    hire: { en: "WhatsApp Me", id: "WhatsApp Me" },
     hireExec: { en: "Hire me for an executive role", id: "Rekrut saya untuk peran eksekutif" },
     explore: { en: "Explore digital assets", id: "Jelajahi Digital Assets" },
     accessInsights: { en: "Read the playbooks", id: "Baca playbook saya" },
@@ -328,6 +329,7 @@ export const CASE_STUDIES = [
     },
     industry: { en: "HRTech · SEEK", id: "HRTech · SEEK" },
     year: "2025 — 2026",
+    logo: "/seek-logo.png",
     cover: "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1lZXRpbmclMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgxODA5NjYzfDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "Assistant Operations Manager (promoted 3× in 12 months)", id: "Assistant Operations Manager (promosi 3× dalam 12 bulan)" },
@@ -355,7 +357,7 @@ export const CASE_STUDIES = [
       ],
     },
     results: [
-      { metric: "+61%", label: { en: "Acquisition growth in a single month", id: "Pertumbuhan akuisisi dalam satu bulan" } },
+      { metric: "+61%", label: { en: "Acquisition growth in the third month", id: "Pertumbuhan akuisisi di bulan ketiga" } },
       { metric: "+16.3%", label: { en: "Productivity gain across the team", id: "Kenaikan produktivitas tim" } },
       { metric: "3×", label: { en: "Internal promotions inside a 12-month contract", id: "Promosi internal dalam kontrak 12 bulan" } },
     ],
@@ -370,6 +372,7 @@ export const CASE_STUDIES = [
     title: { en: "Scaling a social-enterprise B2B engine at Du'Anyam", id: "Menskalakan mesin B2B social enterprise di Du'Anyam" },
     industry: { en: "Social Enterprise · Du'Anyam", id: "Social Enterprise · Du'Anyam" },
     year: "2018 — 2023",
+    logo: null as string | null,
     cover: "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "BD Sales Officer → Account Coordinator → Account Manager → Account Specialist (promoted 3×)", id: "BD Sales Officer → Account Coordinator → Account Manager → Account Specialist (promosi 3×)" },
@@ -414,6 +417,7 @@ export const CASE_STUDIES = [
     title: { en: "Building enterprise wellness partnerships at Naluri", id: "Membangun kemitraan wellness untuk enterprise di Naluri" },
     industry: { en: "HealthTech · Naluri", id: "HealthTech · Naluri" },
     year: "2024 — 2025",
+    logo: "/gorrywell-logo.png",
     cover: "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "Senior Business Development Associate", id: "Senior Business Development Associate" },
@@ -458,6 +462,7 @@ export const CASE_STUDIES = [
     title: { en: "70% open-rate prospecting playbook at Krealogi", id: "Playbook prospecting dengan 70% open-rate di Krealogi" },
     industry: { en: "MSME · Krealogi (by Du'Anyam)", id: "UMKM · Krealogi (oleh Du'Anyam)" },
     year: "2023 — 2024",
+    logo: null as string | null,
     cover: "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1lZXRpbmclMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgxODA5NjYzfDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "Business Development Consultant (6-month contract)", id: "Business Development Consultant (kontrak 6 bulan)" },
@@ -502,6 +507,7 @@ export const CASE_STUDIES = [
     title: { en: "+30% digital engagement on heritage FMCG biscuit & confectionery brands", id: "+30% engagement digital untuk brand biskuit & permen FMCG heritage" },
     industry: { en: "FMCG · Biscuit & Confectionery · Kapal Api", id: "FMCG · Biskuit & Permen · Kapal Api" },
     year: "2016 — 2017",
+    logo: "/kapal-api-logo.png",
     cover: "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "Assistant Brand Manager — Biscuit & Confectionery", id: "Assistant Brand Manager — Biskuit & Permen" },

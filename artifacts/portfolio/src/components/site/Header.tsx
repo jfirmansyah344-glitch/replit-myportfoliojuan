@@ -67,9 +67,15 @@ export default function Header() {
         <div className="flex items-center gap-2 lg:gap-3">
           <LanguageSwitcher />
           <ThemeToggle />
-          <Button asChild size="sm" data-testid="header-hire-cta" className="hidden md:inline-flex rounded-full px-5">
-            <Link to="/contact">{t(UI.cta.hire)}</Link>
-          </Button>
+          <a
+            href={SITE.waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="header-hire-cta"
+            className="hidden md:inline-flex items-center justify-center rounded-full px-5 h-9 text-sm font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors"
+          >
+            {t(UI.cta.hire)}
+          </a>
           <button
             type="button"
             data-testid="mobile-menu-toggle"
@@ -99,9 +105,16 @@ export default function Header() {
                 {t(UI.nav[item.key as keyof typeof UI.nav])}
               </NavLink>
             ))}
-            <Button asChild className="mt-3 w-full rounded-full" data-testid="mobile-hire-cta">
-              <Link to="/contact" onClick={() => setOpen(false)}>{t(UI.cta.hire)}</Link>
-            </Button>
+            <a
+              href={SITE.waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="mobile-hire-cta"
+              onClick={() => setOpen(false)}
+              className="mt-3 w-full inline-flex items-center justify-center rounded-full h-10 font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors"
+            >
+              {t(UI.cta.hire)}
+            </a>
           </div>
         </div>
       )}
