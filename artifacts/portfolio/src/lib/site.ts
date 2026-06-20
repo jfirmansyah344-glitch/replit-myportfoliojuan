@@ -365,7 +365,10 @@ export const CASE_STUDIES = [
       en: "Fast growth isn't luck. It's a culture of performance built on scalable processes and disciplined, data-backed decisions.",
       id: "Pertumbuhan cepat bukan keberuntungan. Itu hasil budaya performa yang dibangun di atas proses yang bisa diskalakan dan keputusan disiplin berbasis data.",
     },
-    evidence: [] as { src: string; caption: { en: string; id: string } }[],
+    evidence: [
+      { src: "/evidence/seek-a.jpeg", caption: { en: "The team — 30+ people across operations, customer success & acquisition", id: "Tim — 30+ orang di operasional, customer success & akuisisi" } },
+      { src: "/evidence/seek-b.jpeg", caption: { en: "Jobstreet by SEEK Indonesia office — where the acquisition engine was built", id: "Kantor Jobstreet by SEEK Indonesia — tempat mesin akuisisi dibangun" } },
+    ],
   },
   {
     id: "duanyam-b2b-scaling",
@@ -410,14 +413,18 @@ export const CASE_STUDIES = [
       en: "Social enterprises don't scale on story alone. They scale when commercial discipline meets the mission — and the mission becomes the multiplier.",
       id: "Social enterprise tidak skalabel hanya dari cerita. Mereka skalabel ketika disiplin komersial bertemu misi — dan misi menjadi pengganda.",
     },
-    evidence: [] as { src: string; caption: { en: string; id: string } }[],
+    evidence: [
+      { src: "/evidence/duanyam-a.jpeg", caption: { en: "Asian Games 2018 — led the sales of 50,000 pcs of Du'Anyam official merchandise to corporates, hotels & government agencies", id: "Asian Games 2018 — memimpin penjualan 50.000 produk merchandise resmi Du'Anyam ke korporasi, hotel & instansi pemerintah" } },
+      { src: "/evidence/duanyam-b.jpeg", caption: { en: "Corporate activations, government partnerships & B2B events across the 5-year tenure", id: "Aktivasi korporasi, kemitraan pemerintah & event B2B selama 5 tahun" } },
+      { src: "/evidence/duanyam-c.jpeg", caption: { en: "HubSpot CRM implementation — Rp 2.2B+ in lead generation pipeline with 20% uplift in data accuracy", id: "Implementasi HubSpot CRM — pipeline lead generation Rp 2,2 M+ dengan peningkatan akurasi data 20%" } },
+    ],
   },
   {
     id: "naluri-enterprise-wellness",
     title: { en: "Building enterprise wellness partnerships at Naluri", id: "Membangun kemitraan wellness untuk enterprise di Naluri" },
     industry: { en: "HealthTech · Naluri", id: "HealthTech · Naluri" },
     year: "2024 — 2025",
-    logo: "/gorrywell-logo.png",
+    logo: null as string | null,
     cover: "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
     snapshot: {
       role: { en: "Senior Business Development Associate", id: "Senior Business Development Associate" },
@@ -455,7 +462,11 @@ export const CASE_STUDIES = [
       en: "Wellness closes when you stop selling wellness. Deals move when HR, Finance, and the line of business hear the same story in their own language.",
       id: "Wellness terjual ketika kita berhenti menjual wellness. Deal bergerak ketika HR, Finance, dan lini bisnis mendengar cerita yang sama dalam bahasa mereka masing-masing.",
     },
-    evidence: [] as { src: string; caption: { en: string; id: string } }[],
+    evidence: [
+      { src: "/evidence/naluri-a.jpeg", caption: { en: "Naluri CHRO Roundtable Dialogue — framing wellness as a P&L lever for enterprise buyers", id: "Naluri CHRO Roundtable Dialogue — memposisikan wellness sebagai pengungkit P&L untuk buyer enterprise" } },
+      { src: "/evidence/naluri-b.jpeg", caption: { en: "Apollo.io — 2,700+ verified enterprise contacts identified across target HR & People segments", id: "Apollo.io — 2.700+ kontak enterprise terverifikasi di segmen HR & People" } },
+      { src: "/evidence/naluri-c.jpeg", caption: { en: "Dripify LinkedIn automation — multi-touch outreach campaigns warming enterprise decision-makers", id: "Otomasi LinkedIn Dripify — kampanye multi-touch untuk menghangatkan pengambil keputusan enterprise" } },
+    ],
   },
   {
     id: "krealogi-prospecting-playbook",
@@ -500,7 +511,11 @@ export const CASE_STUDIES = [
       en: "Channel-fit beats channel-volume every time. Meet the buyer where they already are, and personalisation will outperform automation.",
       id: "Channel-fit selalu mengalahkan channel-volume. Temui pembeli di tempat mereka sudah berada — personalisasi akan mengalahkan otomatisasi.",
     },
-    evidence: [] as { src: string; caption: { en: string; id: string } }[],
+    evidence: [
+      { src: "/evidence/krealogi-a.jpeg", caption: { en: "On-the-ground prospecting — partner meetings with SME businesses, hotels & community networks across East Nusa Tenggara", id: "Prospecting langsung — pertemuan dengan UMKM, hotel & jaringan komunitas di Nusa Tenggara Timur" } },
+      { src: "/evidence/krealogi-b.jpeg", caption: { en: "Market research in Sumba — 70+ clients pitched from 200+ leads, 10 corporate & hotel deals closed", id: "Riset pasar di Sumba — 70+ klien dipitch dari 200+ lead, 10 deal korporasi & hotel berhasil ditutup" } },
+      { src: "/evidence/krealogi-c.jpeg", caption: { en: "Strategic BD partnerships — resorts, banks, government & hospitality clients across Kupang & Sumba", id: "Kemitraan BD strategis — resort, bank, pemerintah & klien hospitality di Kupang & Sumba" } },
+    ],
   },
   {
     id: "kapal-api-brand-campaign",
@@ -545,7 +560,10 @@ export const CASE_STUDIES = [
       en: "Big brands don't get younger by trying harder. They get younger by syncing the celebrity moment, the shelf moment, and the scroll moment.",
       id: "Brand besar tidak menjadi muda dengan mencoba lebih keras. Mereka menjadi muda dengan menyinkronkan momen celebrity, momen rak, dan momen scroll.",
     },
-    evidence: [] as { src: string; caption: { en: string; id: string } }[],
+    evidence: [
+      { src: "/evidence/kapal-api-a.jpeg", caption: { en: "Top Brand 2016 & Kapal Api awards — brand campaigns supporting multi-billion IDR sales targets", id: "Top Brand 2016 & penghargaan Kapal Api — kampanye brand yang mendukung target penjualan miliaran rupiah" } },
+      { src: "/evidence/kapal-api-b.jpeg", caption: { en: "Kapal Api Store product portfolio — integrated campaign across biscuit, confectionery & beverage categories", id: "Portofolio produk Kapal Api Store — kampanye terintegrasi di kategori biskuit, permen & minuman" } },
+    ],
   },
 ];
 
