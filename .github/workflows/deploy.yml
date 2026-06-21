@@ -20,6 +20,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: artifacts/portfolio
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,13 +46,12 @@ jobs:
         run: |
           export PORT=3000
           export BASE_PATH=/
-          export VITE_SKIP_TYPECHECK=true
           pnpm run build || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: artifacts/portfolio/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
