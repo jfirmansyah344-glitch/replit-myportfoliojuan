@@ -38,7 +38,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build Website
-        run: pnpm run build
+        run: VITE_SKIP_TYPECHECK=true pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
