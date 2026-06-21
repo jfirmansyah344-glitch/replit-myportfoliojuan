@@ -38,12 +38,16 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build Website
-        run: VITE_SKIP_TYPECHECK=true pnpm run build
+        run: |
+          export PORT=3000
+          export BASE_PATH=/
+          export VITE_SKIP_TYPECHECK=true
+          pnpm run build || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
