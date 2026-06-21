@@ -1,0 +1,70 @@
+# Portfolio Website Revision Request
+
+Please make the following updates to my portfolio website:
+
+### 1. Case Study Logos
+
+* I have attached **3 additional company logos** that are still missing. Please add them to the appropriate Case Study sections.
+* For the **SEEK** logo, please keep its original **rectangular aspect ratio**. Do not crop it into a circle.
+
+---
+
+### 2. Footer – WhatsApp Button
+
+* Please ensure the **"WhatsApp Me"** button in the footer stays on **one single line**.
+* Adjust the button width or padding if needed to prevent the text from wrapping.
+
+---
+
+### 3. Case Study Cover Images
+
+* Please replace the current generic illustrations with **one of the photos I uploaded** for each Case Study.
+* Choose the most suitable photo to make the portfolio feel more authentic and professional.
+* Crop or reposition the images if necessary while keeping the subject clearly visible.
+
+---
+
+### 4. Update Instagram Link
+
+Replace the current Instagram link with:
+
+**https://www.instagram.com/juan.buildss/**
+
+---
+
+### 5. Update Threads Link
+
+Replace the current Threads link with:
+
+**https://www.threads.com/@juanbuildss**
+
+---
+
+### 6. Add TikTok to the Footer
+
+* Please add a **TikTok** icon to the footer alongside LinkedIn, Instagram, and Threads.
+* Use this profile link:
+
+**https://www.tiktok.com/@juan.buildss**
+
+* Keep the icon size, spacing, hover effects, and styling consistent with the other social media icons.
+* Open the link in a new tab.
+
+---
+
+### 7. Redesign the Recommendation Section
+
+* Please redesign the **Recommendation** section by following the attached reference design.
+* Keep my existing recommendation content, but update the layout to look cleaner, more modern, and more premium.
+* Add **category tabs** at the top (similar to the reference) to organize the testimonials.
+* Redesign each recommendation card with:
+
+  * Better spacing
+  * Rounded corners
+  * Subtle border and shadow
+  * Larger quotation text
+  * Recommender's name, position, company, and company logo at the bottom
+* Keep the **SEEK** logo in its original rectangular aspect ratio instead of forcing it into a circle.
+* Add smooth hover effects and transitions for both the category tabs and recommendation cards.
+* Ensure the section is fully responsive across desktop, tablet, and mobile.
+* The final design should match the clean, minimal, and premium style shown in the attached reference while staying consistent with the rest of my portfolio.

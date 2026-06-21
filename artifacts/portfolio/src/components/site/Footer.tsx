@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Linkedin, Instagram, Youtube, Mail, ArrowUpRight } from "lucide-react";
-import { SiThreads } from "react-icons/si";
+import { SiThreads, SiTiktok } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { NAV, SITE, SERVICES, PRODUCTS, UI } from "@/lib/site";
 import { useT } from "./LanguageProvider";
@@ -11,6 +11,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   youtube: Youtube,
   mail: Mail,
   threads: SiThreads,
+  tiktok: SiTiktok,
 };
 
 export default function Footer() {
@@ -51,7 +52,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-hire-juan-btn"
-              className="inline-flex items-center justify-center gap-2 rounded-full px-6 h-10 text-sm font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full px-6 h-10 text-sm font-medium bg-[#25D366] hover:bg-[#1DB954] text-white transition-colors whitespace-nowrap"
             >
               {t(UI.cta.hire)} <ArrowUpRight className="h-4 w-4" />
             </a>

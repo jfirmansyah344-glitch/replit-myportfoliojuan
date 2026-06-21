@@ -188,7 +188,7 @@ export default function HomePage() {
             <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl tracking-tight font-medium text-balance">
               {t(UI.sections.latestLessons.heading) as string}
             </h2>
-            <Button asChild variant="outline" className="mt-6 rounded-full" data-testid="home-insights-cta">
+            <Button asChild variant="outline" className="mt-6 rounded-full text-emerald-600 border-emerald-600 hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/30" data-testid="home-insights-cta">
               <Link to="/insights">{t(UI.cta.allInsights) as string}</Link>
             </Button>
           </div>

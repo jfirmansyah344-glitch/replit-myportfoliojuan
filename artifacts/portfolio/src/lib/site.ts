@@ -27,8 +27,9 @@ export const SITE = {
   },
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/juanfirmansyah1/", icon: "linkedin" },
-    { label: "Instagram", href: "https://www.instagram.com/juanbuildss/", icon: "instagram" },
+    { label: "Instagram", href: "https://www.instagram.com/juan.buildss/", icon: "instagram" },
     { label: "Threads", href: "https://www.threads.com/@juanbuildss", icon: "threads" },
+    { label: "TikTok", href: "https://www.tiktok.com/@juan.buildss", icon: "tiktok" },
     { label: "YouTube", href: "https://youtube.com/@escalapulse?si=3nQMD4sQgYkV1ARn", icon: "youtube" },
     { label: "Email", href: "mailto:jfirmansyah344@gmail.com?subject=Business%20Inquiry&body=Hi%20Juan,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0ARegards,", icon: "mail" },
   ],
@@ -330,7 +331,7 @@ export const CASE_STUDIES = [
     industry: { en: "HRTech · SEEK", id: "HRTech · SEEK" },
     year: "2025 — 2026",
     logo: "/seek-logo.png",
-    cover: "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1lZXRpbmclMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgxODA5NjYzfDA&ixlib=rb-4.1.0&q=85",
+    cover: "/evidence/seek-b.jpeg",
     snapshot: {
       role: { en: "Assistant Operations Manager (promoted 3× in 12 months)", id: "Assistant Operations Manager (promosi 3× dalam 12 bulan)" },
       scope: { en: "30+ person team · Operations, Customer Success & Acquisition", id: "Tim 30+ orang · Operasional, Customer Success & Akuisisi" },
@@ -375,8 +376,8 @@ export const CASE_STUDIES = [
     title: { en: "Scaling a social-enterprise B2B engine at Du'Anyam", id: "Menskalakan mesin B2B social enterprise di Du'Anyam" },
     industry: { en: "Social Enterprise · Du'Anyam", id: "Social Enterprise · Du'Anyam" },
     year: "2018 — 2023",
-    logo: null as string | null,
-    cover: "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
+    logo: "/du-anyam-logo.jpeg" as string | null,
+    cover: "/evidence/duanyam-a.jpeg",
     snapshot: {
       role: { en: "BD Sales Officer → Account Coordinator → Account Manager → Account Specialist (promoted 3×)", id: "BD Sales Officer → Account Coordinator → Account Manager → Account Specialist (promosi 3×)" },
       scope: { en: "Team of 10 · Corporate, hospitality & government segments", id: "Tim 10 orang · Segmen korporasi, hospitality & pemerintah" },
@@ -424,8 +425,8 @@ export const CASE_STUDIES = [
     title: { en: "Building enterprise wellness partnerships at Naluri", id: "Membangun kemitraan wellness untuk enterprise di Naluri" },
     industry: { en: "HealthTech · Naluri", id: "HealthTech · Naluri" },
     year: "2024 — 2025",
-    logo: null as string | null,
-    cover: "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
+    logo: "/naluri-logo.png" as string | null,
+    cover: "/evidence/naluri-a.jpeg",
     snapshot: {
       role: { en: "Senior Business Development Associate", id: "Senior Business Development Associate" },
       scope: { en: "Enterprise & mid-market HR/People segment", id: "Segmen HR/People enterprise & mid-market" },
@@ -473,8 +474,8 @@ export const CASE_STUDIES = [
     title: { en: "70% open-rate prospecting playbook at Krealogi", id: "Playbook prospecting dengan 70% open-rate di Krealogi" },
     industry: { en: "MSME · Krealogi (by Du'Anyam)", id: "UMKM · Krealogi (oleh Du'Anyam)" },
     year: "2023 — 2024",
-    logo: null as string | null,
-    cover: "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1lZXRpbmclMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzgxODA5NjYzfDA&ixlib=rb-4.1.0&q=85",
+    logo: "/krealogi-logo.png" as string | null,
+    cover: "/evidence/krealogi-b.jpeg",
     snapshot: {
       role: { en: "Business Development Consultant (6-month contract)", id: "Business Development Consultant (kontrak 6 bulan)" },
       scope: { en: "Regional SME outbound · WhatsApp + community channels", id: "Outbound UMKM regional · WhatsApp + channel komunitas" },
@@ -523,7 +524,7 @@ export const CASE_STUDIES = [
     industry: { en: "FMCG · Biscuit & Confectionery · Kapal Api", id: "FMCG · Biskuit & Permen · Kapal Api" },
     year: "2016 — 2017",
     logo: "/kapal-api-logo.png",
-    cover: "https://images.unsplash.com/photo-1614595737476-42487331b8a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwbGluZXN8ZW58MHx8fHwxNzgxODA5NjU0fDA&ixlib=rb-4.1.0&q=85",
+    cover: "/evidence/kapal-api-a.jpeg",
     snapshot: {
       role: { en: "Assistant Brand Manager — Biscuit & Confectionery", id: "Assistant Brand Manager — Biskuit & Permen" },
       scope: { en: "Integrated brand campaigns · celebrity endorsement · activation", id: "Kampanye brand terintegrasi · celebrity endorsement · aktivasi" },
@@ -717,16 +718,19 @@ export const RECOMMENDATIONS_CATS: Record<string, { en: string; id: string }> = 
   "Operational Master": { en: "Operational Master", id: "Master Operasional" },
 };
 
-export const RECOMMENDATIONS: Record<string, { name: string; role: string; quote: string }[]> = {
+export const RECOMMENDATIONS: Record<string, { name: string; role: string; quote: string; logo?: string; logoWide?: boolean }[]> = {
   "Strategic Visionary": [
     {
       name: "Fauzan Raudatul Hayat",
       role: "Head of National Operation at SEEK",
+      logo: "/seek-logo.png",
+      logoWide: true,
       quote: "Juan is one of the most adaptable talents I have had the opportunity to lead at SEEK. He consistently demonstrated strong ownership, commercial acumen, and the ability to excel across diverse customer-facing and business development roles. Juan quickly earned trust by delivering results across multiple commercial functions while maintaining a strong focus on customer outcomes. He learns quickly, executes with discipline, and consistently steps up when challenges arise. I am confident that Juan will continue to make a meaningful impact and succeed in increasingly larger leadership responsibilities throughout his career.",
     },
     {
       name: "Azalea Ayuningtyas",
       role: "Co-Founder & CEO at Du'Anyam",
+      logo: "/du-anyam-logo.jpeg",
       quote: "As our very first Business Development team that was promoted to managerial position, Juan has significantly contributed to building our B2B Corporate business segment. Despite limited resources, Juan showed his resilience and eagerness to take on challenges to grow together with our company. Juan is also willing to support initiatives outside his day-to-day task and has genuine passion in creating positive impact to the community.",
     },
   ],
@@ -734,11 +738,15 @@ export const RECOMMENDATIONS: Record<string, { name: string; role: string; quote
     {
       name: "Hafidz Alhadi Luqmana",
       role: "Chief Executive Officer — Indonesia at Naluri",
+      logo: "/naluri-logo.png",
+      logoWide: true,
       quote: "Juan spent a year on our BD team at Naluri, and it was a pleasure working alongside him. He tackled everything from sourcing leads to fine-tuning our outreach with genuine curiosity and steady effort. What I appreciated most was his willingness to lend a hand: whether it was brainstorming ideas, sharing feedback, or just being there to listen, Juan was always ready to support the team. His openness to learning and collaborative spirit made projects smoother and more enjoyable. I'm sure he'll bring the same dedication and teamwork to whatever comes next.",
     },
     {
       name: "Davit Manallu",
       role: "Partnership Manager at Krealogi",
+      logo: "/krealogi-logo.png",
+      logoWide: true,
       quote: "Juan consistently demonstrates exceptional sales performance through his strategic mindset, strong work ethic, and unwavering dedication to exceeding targets. He is always willing to put in the extra effort to help the team achieve its goals and deliver outstanding results.",
     },
   ],
@@ -746,11 +754,15 @@ export const RECOMMENDATIONS: Record<string, { name: string; role: string; quote
     {
       name: "Soni Dharmawan",
       role: "Commercial Director for Indonesia at Naluri",
+      logo: "/naluri-logo.png",
+      logoWide: true,
       quote: "Juan is an individual who is willing to go beyond normal process. Caring not only for the job itself but beyond.",
     },
     {
       name: "Anthony Ryan Pantoni",
       role: "Business Development Manager at Naluri",
+      logo: "/naluri-logo.png",
+      logoWide: true,
       quote: "Juan is a great colleague and an even better friend. His joy in work is extremely contagious; and his positive attitude in most situations allowed him to excel in his work and boost the team's performance. To have worked with Juan, I believe that his greatest strength is his accountability and proactiveness. His perseverance in all situations allowed him to be extremely dependable.",
     },
   ],
@@ -981,10 +993,47 @@ export const CORE_SKILLS = [
 export const ALL_SKILL_TAGS = CORE_SKILLS.flatMap((g) => g.items);
 
 export const GALLERY = [
-  { src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80", caption: { en: "Workshop — placeholder", id: "Workshop — placeholder" } },
-  { src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=80", caption: { en: "Seminar — placeholder", id: "Seminar — placeholder" } },
-  { src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80", caption: { en: "Panel — placeholder", id: "Panel — placeholder" } },
-  { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80", caption: { en: "Webinar — placeholder", id: "Webinar — placeholder" } },
-  { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80", caption: { en: "Training — placeholder", id: "Training — placeholder" } },
-  { src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=1200&q=80", caption: { en: "Keynote — placeholder", id: "Keynote — placeholder" } },
+  {
+    src: "/speaking/center-stage.jpeg",
+    caption: { en: "Center Stage · Arena.id — speaking on entrepreneurship & community growth", id: "Center Stage · Arena.id — berbicara tentang kewirausahaan & pertumbuhan komunitas" },
+  },
+  {
+    src: "/speaking/mounev-poster.webp",
+    caption: { en: "Mounev Academy · May 2024 — guest speaker: How to Build Your Business Development Strategy", id: "Mounev Academy · Mei 2024 — pembicara tamu: Cara Membangun Strategi Business Development" },
+  },
+  {
+    src: "/speaking/indika-foundation.jpeg",
+    caption: { en: "INDY Talks · Indika Foundation — capacity building & social organisation networking", id: "INDY Talks · Indika Foundation — peningkatan kapasitas & jaringan organisasi sosial" },
+  },
+  {
+    src: "/speaking/mounev-zoom.jpeg",
+    caption: { en: "How to Build Your BD Strategy · 35+ live participants — webinar with interactive Q&A", id: "How to Build Your BD Strategy · 35+ peserta langsung — webinar dengan Q&A interaktif" },
+  },
+  {
+    src: "/speaking/mounev-slide-brand.jpeg",
+    caption: { en: "Brand relevance framework deck — why brands must stay relevant to their consumer", id: "Deck framework relevansi brand — mengapa brand harus terus relevan bagi konsumen" },
+  },
+  {
+    src: "/speaking/mounev-slide-channel.jpeg",
+    caption: { en: "Effective marketing channel strategy — reach the right audience in the right place", id: "Strategi saluran pemasaran efektif — jangkau audiens yang tepat di tempat yang tepat" },
+  },
+];
+
+export const TOOLS: { category: { en: string; id: string }; items: string[] }[] = [
+  {
+    category: { en: "CRM & Lead Intelligence", id: "CRM & Intelijen Lead" },
+    items: ["HubSpot", "Apollo.io", "Lusha", "LinkedIn Sales Navigator"],
+  },
+  {
+    category: { en: "Outreach & Automation", id: "Outreach & Otomasi" },
+    items: ["Dripify", "Mailchimp", "Zoom"],
+  },
+  {
+    category: { en: "Project & Collaboration", id: "Proyek & Kolaborasi" },
+    items: ["Trello", "Slack", "Google Workspace", "Notion"],
+  },
+  {
+    category: { en: "Analytics & Reporting", id: "Analitik & Pelaporan" },
+    items: ["Google Analytics", "Meta Ads Manager", "Glockify", "DocuSign"],
+  },
 ];
