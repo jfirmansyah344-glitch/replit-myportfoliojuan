@@ -77,9 +77,15 @@ export default function Footer() {
           <ul className="grid gap-3">
             {PRODUCTS.slice(0, 5).map((p) => (
               <li key={p.id}>
-                <Link to={`/expertise#${p.id}`} className="text-sm text-muted-foreground hover:text-foreground link-underline" data-testid={`footer-product-${p.id}`}>
+                <a
+                  href={SITE.storeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground link-underline"
+                  data-testid={`footer-product-${p.id}`}
+                >
                   {t(p.name)}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

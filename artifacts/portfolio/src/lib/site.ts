@@ -28,7 +28,7 @@ export const SITE = {
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/juanfirmansyah1/", icon: "linkedin" },
     { label: "Instagram", href: "https://www.instagram.com/juan.buildss/", icon: "instagram" },
-    { label: "Threads", href: "https://www.threads.com/@juanbuildss", icon: "threads" },
+    { label: "Threads", href: "https://www.threads.net/@juanbuildss", icon: "threads" },
     { label: "TikTok", href: "https://www.tiktok.com/@juan.buildss", icon: "tiktok" },
     { label: "YouTube", href: "https://youtube.com/@escalapulse?si=3nQMD4sQgYkV1ARn", icon: "youtube" },
     { label: "Email", href: "mailto:jfirmansyah344@gmail.com?subject=Business%20Inquiry&body=Hi%20Juan,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0ARegards,", icon: "mail" },
@@ -36,6 +36,7 @@ export const SITE = {
   portrait:
     "https://customer-assets.emergentagent.com/job_revenue-leader/artifacts/6qmq52xk_Black%20shirt_Juan.png",
   waUrl: "https://wa.link/zmt03q",
+  storeUrl: "https://lynk.id/buildwithjuan",
 };
 
 export const UI = {
@@ -187,6 +188,14 @@ export const UI = {
         id: "Dibangun dan terbukti di 5 industri — dari rak FMCG hingga pipeline SaaS enterprise.",
       },
     },
+    toolsHighlight: {
+      eyebrow: { en: "Tools & technology", id: "Tools & teknologi" },
+      heading: { en: "Technology I use daily.", id: "Teknologi yang saya gunakan sehari-hari." },
+      sub: {
+        en: "The core platforms and tools I rely on to build strategic partnerships, develop commercial teams, and drive sustainable revenue growth.",
+        id: "Platform dan tools inti yang saya andalkan untuk membangun kemitraan strategis, mengembangkan tim komersial, dan mendorong pertumbuhan revenue yang berkelanjutan.",
+      },
+    },
     gallery: {
       eyebrow: { en: "Speaking & Workshops", id: "Speaking & Workshop" },
       heading: { en: "Selected stages, classrooms & panels.", id: "Beberapa panggung, kelas & panel." },
@@ -298,10 +307,10 @@ export const UI = {
 export const NAV = [
   { key: "home", to: "/" },
   { key: "work", to: "/work" },
-  { key: "expertise", to: "/expertise" },
-  { key: "insights", to: "/insights" },
-  { key: "recommendations", to: "/recommendations" },
   { key: "about", to: "/about" },
+  { key: "expertise", to: "/expertise" },
+  { key: "recommendations", to: "/recommendations" },
+  { key: "insights", to: "/insights" },
   { key: "contact", to: "/contact" },
 ];
 
@@ -969,23 +978,23 @@ export const ABOUT_NARRATIVE = {
 
 export const CORE_SKILLS = [
   {
-    group: { en: "B2B Sales & Business Development", id: "B2B Sales & Business Development" },
-    items: ["B2B Sales", "Business Development Strategy", "Partnership Management", "Sales Pipeline Management", "Strategic Networking", "Consultative Selling", "Sales Target Achievement"],
+    group: { en: "Strategic Sales & Growth", id: "Sales Strategis & Pertumbuhan" },
+    items: ["B2B Sales", "Business Development Strategy", "Partnership Management", "Sales Pipeline Management", "Strategic Networking", "Market Expansion", "Territory Management", "Consultative Selling", "Mission Driven Sales", "Social Impact Driven Sales", "Offline Sales Execution", "Sales Target Achievement", "Strategic Regional Development", "Sales Team Leadership"],
   },
   {
-    group: { en: "Market & Territory Growth", id: "Pertumbuhan Pasar & Wilayah" },
-    items: ["Market Expansion", "Territory Management", "Strategic Regional Development", "Offline Sales Execution", "Mission Driven Sales", "Social Impact Driven Sales"],
-  },
-  {
-    group: { en: "Account, Retention & CS", id: "Account, Retensi & CS" },
+    group: { en: "Client Success & Retention", id: "Sukses Klien & Retensi" },
     items: ["Account Management", "Client Retention", "Retention Strategy", "Customer Success Leadership", "Churn Analysis"],
   },
   {
-    group: { en: "Leadership & Operations", id: "Kepemimpinan & Operasional" },
-    items: ["Sales Team Leadership", "Operational Management"],
+    group: { en: "Operations & Management", id: "Operasional & Manajemen" },
+    items: ["Operational Management", "Stakeholder Management", "Strategic Planning and Evaluation", "Pricing and Margin Management", "Inventory and Supply Chain Collaboration", "Executive Stakeholder Management", "Consignment Management", "B2B and B2C Operations Oversight", "Cost Efficiency", "People Operations", "Telesales Leadership", "BPO Management", "Conflict Resolution", "Social Entrepreneurship Operations", "Marketing Budget Monitoring"],
   },
   {
-    group: { en: "Brand Marketing", id: "Brand Marketing" },
+    group: { en: "Analytical & Data Expertise", id: "Analitik & Keahlian Data" },
+    items: ["Analytical Market Research", "Data-Driven Decision Making", "Competitor Market Analysis", "Market Intelligence", "Product Development Insights", "Product R&D Consultancy", "Operational Reporting"],
+  },
+  {
+    group: { en: "Marketing & Brand Strategy", id: "Marketing & Strategi Brand" },
     items: ["Strategic Brand Management", "Digital Activation Strategy", "Seasonal Product Development", "POSM Management Lifecycle"],
   },
 ];
@@ -1026,14 +1035,14 @@ export const TOOLS: { category: { en: string; id: string }; items: string[] }[] 
   },
   {
     category: { en: "Outreach & Automation", id: "Outreach & Otomasi" },
-    items: ["Dripify", "Mailchimp", "Zoom"],
+    items: ["Lemlist", "Mailchimp"],
   },
   {
     category: { en: "Project & Collaboration", id: "Proyek & Kolaborasi" },
-    items: ["Trello", "Slack", "Google Workspace", "Notion"],
+    items: ["Trello", "Slack", "Google Workspace", "Canva"],
   },
   {
-    category: { en: "Analytics & Reporting", id: "Analitik & Pelaporan" },
-    items: ["Google Analytics", "Meta Ads Manager", "Glockify", "DocuSign"],
+    category: { en: "Productivity & Docs", id: "Produktivitas & Dokumen" },
+    items: ["Microsoft Excel", "Microsoft PowerPoint", "Microsoft Word", "Clockify", "DocuSign"],
   },
 ];

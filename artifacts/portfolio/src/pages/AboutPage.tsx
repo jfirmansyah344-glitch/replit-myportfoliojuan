@@ -1,8 +1,26 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Download } from "lucide-react";
-import { SITE, INDUSTRIES, TIMELINE, UI, PRINCIPLES, ABOUT_NARRATIVE, CORE_SKILLS } from "@/lib/site";
+import { SITE, INDUSTRIES, TIMELINE, UI, PRINCIPLES, ABOUT_NARRATIVE, CORE_SKILLS, TOOLS } from "@/lib/site";
 import { useT } from "@/components/site/LanguageProvider";
+
+const TOOL_COLOR_MAP: Record<string, string> = {
+  "HubSpot": "#FF7A59",
+  "Apollo.io": "#1a1a2e",
+  "Lusha": "#6C5CE7",
+  "LinkedIn Sales Navigator": "#0A66C2",
+  "Lemlist": "#FF5733",
+  "Mailchimp": "#FFE01B",
+  "Trello": "#0052CC",
+  "Slack": "#4A154B",
+  "Google Workspace": "#4285F4",
+  "Canva": "#00C4CC",
+  "Microsoft Excel": "#217346",
+  "Microsoft PowerPoint": "#D24726",
+  "Microsoft Word": "#2B579A",
+  "Clockify": "#03A9F4",
+  "DocuSign": "#FFCC22",
+};
 
 export default function AboutPage() {
   const { t } = useT();
@@ -93,6 +111,47 @@ export default function AboutPage() {
                       {skill}
                     </span>
                   ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TOOLS HIGHLIGHT */}
+      <section className="mt-24 border-t border-border pt-16" data-testid="tools-section">
+        <div className="grid lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-4">
+            <div className="eyebrow">{t(UI.sections.toolsHighlight.eyebrow) as string}</div>
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl tracking-tight font-medium">
+              {t(UI.sections.toolsHighlight.heading) as string}
+            </h2>
+            <p className="mt-4 text-muted-foreground max-w-md">
+              {t(UI.sections.toolsHighlight.sub) as string}
+            </p>
+          </div>
+          <div className="lg:col-span-8 grid gap-0">
+            {TOOLS.map((cat) => (
+              <div key={t(cat.category) as string} className="border-t border-border pt-6 pb-6">
+                <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                  {t(cat.category) as string}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {cat.items.map((tool) => {
+                    const color = TOOL_COLOR_MAP[tool];
+                    return (
+                      <span
+                        key={tool}
+                        className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-border bg-card hover:bg-foreground hover:text-background transition-colors cursor-default group"
+                      >
+                        <span
+                          className="h-2.5 w-2.5 shrink-0 rounded-full group-hover:opacity-60"
+                          style={{ backgroundColor: color ?? "#94a3b8" }}
+                        />
+                        {tool}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             ))}

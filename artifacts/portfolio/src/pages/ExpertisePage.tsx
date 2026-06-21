@@ -1,7 +1,7 @@
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowUpRight, Check, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { SERVICES, PRODUCTS, GALLERY, UI } from "@/lib/site";
+import { SERVICES, PRODUCTS, GALLERY, UI, SITE } from "@/lib/site";
 import { useT } from "@/components/site/LanguageProvider";
 
 export default function ExpertisePage() {
@@ -45,10 +45,22 @@ export default function ExpertisePage() {
 
       {/* DIGITAL STORE */}
       <section className="mt-24 border-t border-border pt-16">
-        <div className="max-w-2xl mb-12">
-          <div className="eyebrow">{t(UI.sections.expertiseHeader.productsEyebrow) as string}</div>
-          <h2 className="mt-4 font-display text-3xl sm:text-4xl tracking-tight font-medium">{t(UI.sections.expertiseHeader.productsHeading) as string}</h2>
-          <p className="mt-4 text-muted-foreground">{t(UI.sections.expertiseHeader.productsSub) as string}</p>
+        <div className="flex flex-col sm:flex-row sm:items-end gap-6 mb-12">
+          <div className="max-w-2xl flex-1">
+            <div className="eyebrow">{t(UI.sections.expertiseHeader.productsEyebrow) as string}</div>
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl tracking-tight font-medium">{t(UI.sections.expertiseHeader.productsHeading) as string}</h2>
+            <p className="mt-4 text-muted-foreground">{t(UI.sections.expertiseHeader.productsSub) as string}</p>
+          </div>
+          <a
+            href={SITE.storeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-2 rounded-full px-6 h-10 text-sm font-medium bg-foreground text-background hover:opacity-90 transition-opacity"
+            data-testid="store-browse-btn"
+          >
+            <ShoppingBag className="h-4 w-4" />
+            {t(UI.cta.browseStore) as string} <ArrowUpRight className="h-4 w-4" />
+          </a>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {PRODUCTS.map((p) => (
@@ -60,9 +72,15 @@ export default function ExpertisePage() {
               <p className="text-sm text-foreground/80 leading-relaxed flex-1">{t(p.summary) as string}</p>
               <div className="mt-auto flex items-center justify-between">
                 <div className="font-display text-2xl tracking-tight font-medium">{p.price}</div>
-                <Button size="sm" className="rounded-full" data-testid={`product-cta-${p.id}`}>
-                  {t(p.cta) as string}
-                </Button>
+                <a
+                  href={SITE.storeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid={`product-cta-${p.id}`}
+                  className="inline-flex items-center gap-1.5 rounded-full px-4 h-9 text-sm font-medium bg-foreground text-background hover:opacity-90 transition-opacity"
+                >
+                  {t(p.cta) as string} <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
               </div>
             </div>
           ))}
